@@ -1,0 +1,398 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="Home.css" rel="stylesheet" />
+  <title>Register Online</title>
+<style>
+  /* HORIZONTAL MENU */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body{
+  background: #1E1F25;
+}
+ul{
+  display: flex;
+  width: 100%;
+font-family: "Lucida Console", "Courier New", monospace;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+}
+li {
+  padding:  1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+a {
+text-decoration: none;
+}
+
+li:hover {
+  background-image: url('h.webp');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+/* PAGE ELEMENT */
+body {
+    background: url(806427.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+
+}
+h1 {
+  text-align: center;
+  font-family: Bahnschrift SemiBold;
+  color: #ff9166;
+  font-style:bold;
+}
+
+
+.boxed {
+  border: 1px solid gold ;
+  padding:10px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, Fantasy;
+  color: #deb887;
+  background-color: #800000;
+  font-style:italic;
+  width: 70%;
+
+}
+
+/* SLIDE SHOW */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/**/
+/* TOP BUTTON */
+
+#myBtn {
+  border: 5px solid white;
+  margin-top: 15px;
+  padding: 10px;
+  width: 15%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: black;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+
+<body><center>
+  <br><br><br><br>
+
+<header><!--Website title banner-->
+  <h1>Bestari SKOR A Tuition Center</h1>
+</header>
+
+  <br><br>
+  <!-- HORIZONTAL MENU -->
+  <ul>
+    <a href="index.html"  target="_self"><li>HOME</li></a>
+    <a href="go.html"  target="_self"><li>GO! SKOR</li></a>
+    <a href="timetable.html"  target="_self"><li>2021 TIMETABLE</li></a>
+    <a><li>REGISTER ONLINE</li></a>
+    <a href="contactus.html"  target="_self"><li>CONTACT US</li></a>
+    <a href="trial.html"  target="_self"><li>TRIAL EXAM</li></a>
+    
+  </ul>
+  <br><br>
+
+  <img src="home.jpg"><br><br><br><br><br><br><br><br><br>
+  <!-- SLIDE SHOW -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+      <img src="1.jpg" style="width:1000px;height:500px;">
+      <div class="text">“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</div>
+  </div>
+
+  <div class="mySlides fade">
+      <img src="2.jpg" style="width:1000px;height:500px;">
+      <div class="text">“Don’t let yesterday take up too much of today.” — Will Rogers</div>
+  </div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+/* SLIDE SHOW */
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+<br><br>
+<p style = "font-size:30px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">Download 2021 Timetable here. </p>
+<p style = "font-size:20px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">(Lesson is conducted at the Centers)</p><br>
+<a href="https://bestariskor.com/uploads/6/8/8/9/68892595/timetable_2021_rev3.pdf" download>
+  <img src="time.png" alt="W3Schools" width="100" height="100"><br><br>
+</a>
+<br><br>
+<br><br>
+<form action="result.html" method="get" enctype="multipart/form-data">
+<table style="color: yellow;font-size: 20px;line-height: 1.6;background-color:black;opacity: 0.7;">
+
+  <!--text-->
+  <div>
+    <tr>
+      <th><label for="name">Name</label></th>
+      <td>:</td>
+      <td><input type="text" name="name" id="name" required></td>
+    </tr>
+  </div>
+
+  <!--email-->
+  <div>
+    <tr>
+      <th><label for="email">Email</label></th>
+      <td>:</td>
+      <td><input type="email" name="email" id="email" required></td>
+    </tr>
+  </div>
+
+<!--select-->
+  <div>
+    <tr>
+      <th><label for="eyeColor">Level</label></th>
+      <td>:</td>
+      <td>
+  <select id="level" name="level">
+    <option>Please select Std/Form in 2021</option>
+    <option>Std 1</option>
+    <option>Std 2</option>
+    <option>Std 3</option>
+    <option>Std 4</option>
+    <option>Std 5</option>
+    <option>Std 6</option>
+    <option>Form 1</option>
+    <option>Form 2</option>
+    <option>Form 3</option>
+    <option>Form 4</option>
+    <option>Form 5</option>
+  </select>
+ </td>
+    </tr>
+  </div>
+
+
+
+  <!--radio-->
+  <div>
+    <tr><th><br>Center<br><br></th>
+    <td>:</td>
+  <td><input type="radio" id="yes" name="question" value="yes">
+  <label for="yes">Bayan Baru ( Opp. Giant Hypermarket )</label><br>
+  <input type="radio" id="no" name="question" value="no">
+  <label for="no">The CEO ( Opp. Kayu Nasi Kandar )</label></td>
+  </tr>
+  </div>
+
+  <!--checkbox-->
+  <div>
+    <tr><th><br>Subjects Taken<br><br></th>
+    <td>:</td>
+  <td><input type="checkbox" id="yes" name="question" value="yes">
+  <label for="yes">Maths</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">English</label><br>
+  <input type="checkbox" id="yes" name="question" value="yes">
+  <label for="yes">Bahasa Melayu</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">Science</label><br>
+  <input type="checkbox" id="yes" name="question" value="yes">
+  <label for="yes">English Writing</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">BM Penulisan</label><br>
+  <input type="checkbox" id="yes" name="question" value="yes">
+  <label for="yes">Physics</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">Chemistry</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">Biology</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">Add Maths + Maths</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">Accounting</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">SPM English Writing</label><br>
+  <input type="checkbox" id="no" name="question" value="no">
+  <label for="no">B.Cina</label><br>
+</td>
+  </tr>
+  </div>
+
+  </div>
+
+
+</table>
+</form><br><br><br>
+
+<p style = "font-size:25px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">Term & Condition :</p>
+<p style = "font-size:20px;;font-family:Trebuchet MS, sans-serif; color:#FFFFFF;">Seats are limited. Therefore, booking will only be secured with full payment. Please make payment at the center or pay online to Pusat Tuisyen Bestari SKOR <b style="color:#00ff00">@ Maybank Account 5070-1300-6881</b>. For more inquiries, <b style="color:#00ff00">please call 016-421-8007</b>.</p><br><br>
+<a href="https://bestariskor.com/register-online.html" target="_blank"><button type="button" style="background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;">BOOK NOW</button></a><br><br>
+<center><img src="bank.png" style="width:50%;"></center><br><br>
+
+
+<center><button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button></center>
+<script>
+/* TOP BUTTON */
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<br><br>
+<footer>
+        <center><b><font color="#FFFDD0" style="font-size:17px ">&copy; Copyright 2020 by BestariSKOR Education</font></b><center>
+        <center><b><font color="#FFFDD0" style="font-size:15px ">&copy;Site powered by Weebly. Managed by Exabytes.my - Malaysia</font></b><center>
+</footer>
+<br><br>
+ </body>
+</html>

@@ -1,0 +1,322 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="Home.css" rel="stylesheet" />
+  <title>Go ! SKOR</title>
+<style>
+  /* HORIZONTAL MENU */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body{
+  background: #1E1F25;
+}
+ul{
+  display: flex;
+  width: 100%;
+font-family: "Lucida Console", "Courier New", monospace;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+}
+li {
+  padding:  1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+a {
+text-decoration: none;
+}
+
+li:hover {
+  background-image: url('h.webp');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+/* PAGE ELEMENT */
+body {
+    background: url(806427.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+
+}
+h1 {
+  text-align: center;
+  font-family: Bahnschrift SemiBold;
+  color: #ff9166;
+  font-style:bold;
+}
+
+
+.boxed {
+  border: 3px solid gold ;
+  padding:10px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, Fantasy;
+  color: #deb887;
+  background-color: #1A5276;
+  font-style:italic;
+  width: 65%;
+
+}
+
+/* SLIDE SHOW */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/**/
+/* TOP BUTTON */
+
+#myBtn {
+  border: 5px solid white;
+  margin-top: 15px;
+  padding: 10px;
+  width: 15%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: black;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+
+<body><center>
+  <br><br><br><br>
+
+<header><!--Website title banner-->
+  <h1>Bestari SKOR A Tuition Center</h1>
+</header>
+
+  <br><br>
+  <!-- HORIZONTAL MENU -->
+  <ul>
+    <a href="index.html"  target="_self"><li>HOME</li></a>
+    <a><li>GO! SKOR</li></a>
+    <a href="timetable.html"  target="_self"><li>2021 TIMETABLE</li></a>
+    <a href="register.html"  target="_self"><li>REGISTER ONLINE</li></a>
+    <a href="contactus.html"  target="_self"><li>CONTACT US</li></a>
+    <a href="trial.html"  target="_self"><li>TRIAL EXAM</li></a>
+    
+  </ul>
+  <br><br>
+
+  <img src="home.jpg"><br><br><br><br><br><br><br><br><br>
+  <!-- SLIDE SHOW -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+      <img src="1.jpg" style="width:1000px;height:500px;">
+      <div class="text">“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</div>
+  </div>
+
+  <div class="mySlides fade">
+      <img src="2.jpg" style="width:1000px;height:500px;">
+      <div class="text">“Don’t let yesterday take up too much of today.” — Will Rogers</div>
+  </div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+/* SLIDE SHOW */
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+<br><br>
+
+
+<p style = "font-size:30px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">BESTARI SKOR TUITION CENTER</p><br>
+<iframe width="65%" src="https://youtu.be/CR6Jmx44LLM"></iframe><br><br>
+<table>
+  <td><center>
+<br><br>
+    <div class="boxed" >
+      <b>COMPANY PROFILE</b><br><br>
+Bestari SKOR A was established in 1991 by a group of Educationists and Expert Teachers. Thanks for your supports that enable us to continue rendering the Best Education in Penang.<br><br>
+Bestari SKOR A has helped more than 20 Thousands of students in pursuing their Dreams over the years. They have achieved great milestone in Academics and Careers.<br><br>
+Every year, Hundreds of UPSR and PT3 students enroll in Prestigious Boarding school such as MRSM, Institute Yayasan Saad @ Melaka, Malay College Kuala Kangsar etc. More than 80% of SPM students enrolled in Medicine, Pharmacy, Law, Architects, Actuary, Engineering, Optometric, Dentistry etc. They further their tertiary education in overseas such as Australia, New Zealand, Ireland, India, England, Russia, USA etc. Success is made possible by Commitment, Perseverance and Hard-Work.<br><br>
+
+SYABAS & TAHNIAH to all Bestari SKOR Alumni<br><br>
+
+<b>OUR PROMISE</b><br><br>
+
+  * Assurance of Academic Advancement.<br>
+  * Continuous Upgrading in Methodology.<br>
+  * Delivery of Effective Education System.<br><br><br>
+
+<b>MISSION & VISION</b><br><br>
+  * Meningkatkan Prestasi Akademik Murid-Murid.<br>
+  * Memupuk Semangat Pembelajaran dan Pembinaan Modal Insan.<br>
+  * Melahirkan Pelajar-Pelajar yang Cemerlang  Dalam Pelajaran dan Profesion.<br>
+  * Menaiktarafkan BestariSKOR A Menjadi Institusi Pendidikan yang Terunggul di Pulau Pinang.<br>
+
+    </center></div><br><br>
+<b>HALL OF FAME</b><br>
+<center><img src="a1.jpg" style="width:65%;"><br><br></center>
+<center><img src="a2.jpg" style="width:65%;"><br><br></center>
+
+<br><br>
+<!-- TOP BUTTON -->
+<center><button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button></center>
+<script>
+/* TOP BUTTON */
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<br><br>
+<footer>
+        <center><b><font color="#FFFDD0" style="font-size:17px ">&copy; Copyright 2020 by BestariSKOR Education</font></b><center>
+        <center><b><font color="#FFFDD0" style="font-size:15px ">&copy;Site powered by Weebly. Managed by Exabytes.my - Malaysia</font></b><center>
+</footer>
+<br><br>
+ </body>
+</html>
+

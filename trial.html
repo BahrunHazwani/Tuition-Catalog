@@ -1,0 +1,538 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="Home.css" rel="stylesheet" />
+  <title>TRIAL EXAM</title>
+<style>
+  /* HORIZONTAL MENU */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body{
+  background: #1E1F25;
+}
+ul{
+  display: flex;
+  width: 100%;
+font-family: "Lucida Console", "Courier New", monospace;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+}
+li {
+  padding:  1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+a {
+text-decoration: none;
+}
+
+li:hover {
+  background-image: url('h.webp');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+/* PAGE ELEMENT */
+body {
+    background: url(806427.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+
+}
+h1 {
+  text-align: center;
+  font-family: Bahnschrift SemiBold;
+  color: #ff9166;
+  font-style:bold;
+}
+
+
+.boxed {
+  border: 5px dotted gold ;
+  padding:10px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, Fantasy;
+  color: #deb887;
+  background-color: #34495E;
+  font-style:italic;
+  width: 70%;
+
+}
+
+.boxed2 {
+  border: 5px dotted  gold ;
+  padding:10px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, Fantasy;
+  color: #deb887;
+  background-color: #5B2C6F;
+  font-style:italic;
+  width: 70%;
+
+}
+.boxed3 {
+  border: 5px dotted  gold ;
+  padding:10px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, Fantasy;
+  color: #deb887;
+  background-color: #0B5345;
+  font-style:italic;
+  width: 70%;
+
+}
+/* SLIDE SHOW */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/**/
+/* TOP BUTTON */
+
+#myBtn {
+  border: 5px solid white;
+  margin-top: 15px;
+  padding: 10px;
+  width: 15%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: black;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body><center>
+  <br><br><br><br>
+
+<header><!--Website title banner-->
+  <h1>Bestari SKOR A Tuition Center</h1>
+</header>
+
+  <br><br>
+  <!-- HORIZONTAL MENU -->
+  <ul>
+    <a href="index.html"  target="_self"><li>HOME</li></a>
+    <a href="go.html"  target="_self"><li>GO! SKOR</li></a>
+    <a href="timetable.html"  target="_self"><li>2021 TIMETABLE</li></a>
+    <a href="register.html"  target="_self"><li>REGISTER ONLINE</li></a>
+    <a href="contactus.html"  target="_self"><li>CONTACT US</li></a>
+    <a><li>TRIAL EXAM</li></a>
+    
+  </ul>
+  <br><br>
+
+  <img src="home.jpg"><br><br><br><br><br><br><br><br><br>
+
+      <div class="boxed" >
+      <p style = "font-size:30px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">HOTS Activities:</p><br><br>
+
+<b>Form 4 & 5 (SPM)</b><br>
+* Physics<br>
+* Chemistry<br>
+* Add+Maths<br>
+* Maths<br>
+* Biology<br>
+* Science<br>
+* Accounting<br><br>
+
+
+<b>Form 1 / 2 / 3 (PT3)</b><br>
+  * Maths<br>
+  * Science<br>
+  * Bahasa Melayu<br>
+  * English<br><br>
+
+  <b>Std 4 / 5 / 6 (UPSR)</b><br>
+  * Maths<br>
+  * Science<br>
+  * Bahasa Melayu<br>
+  * English<br><br>
+
+  <b>Std 1 / 2 / 3</b><br>
+  * Maths<br>
+  * Science<br>
+  * Bahasa Melayu<br>
+  * English<br><br>
+
+    </center></div>
+<br><br><br><br>
+
+    <center><div class="boxed2">
+      <p style = "font-size:30px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">Experiments :</p><br><br>
+<b>Form 5 Physics :</b><br><br>
+- Water Waves (Reflection/Refraction)<br>
+- Water Waves (Apertures & Diffraction)<br>
+- Water Waves (Interference)<br>
+- Properties of Water Waves (Motions)<br>
+- Properties of Water Waves (Oscillation & Speed)<br>
+- Sound Wave's Properties (Amplitude/Freq/Wavelength/Period)<br>
+- Sound Waves (Reflection)<br>
+- Sound Waves (Refraction)<br>
+- Sound Waves (Diffraction)<br>
+- Sound Waves (Interference)<br>
+- Light Waves (Diffraction)<br>
+- Light Waves (Interference)<br>
+- Relationship between Voltage and Current (Ohm's Law)<br>
+- Conductors (Ohmic and Non- Ohmic)<br>
+- Factors of Resistance <br>
+- E.M.F and Internal Resistance<br> 
+- Electromagnetism <br>
+- Induced Electromagnetic Force<br> 
+- Lenz's Law (Eddy Current)<br>
+- Faraday's Law<br>
+    <br><br>
+<b>Form 5 Chemistry :</b><br><br>
+- ROR <br>
+- How Surface Area affects ROR<br>
+- How Concentration affects ROR<br>
+- How Temperature affects ROR<br>
+- How Catalyst affects ROR<br>
+- Organic Chemistry (Combustion Test)<br>
+- Alkanes Vs Alkenes <br>
+- Preparation of Alcohol via Fermentation<br> 
+- Combustion of Alcohol<br>
+- Oxidation of Alcohol<br>
+- Dehydration of Alcohol<br>
+- Properties of Ethanoic Acid<br>
+- Ester Preparation<br>
+- Latex<br>
+- Natural Rubber<br>
+- Vulcanization of Rubber<br>
+- REDOX Reaction I<br>
+- REDOX Reaction II<br>
+- Displacement of Metal Reaction<br>
+- Displacement of Halogen<br>
+- Transfer of Electrons in REDOX Reaction<br>
+- Rusting of Iron<br>
+- Reactivity of Metal with Oxygen<br>
+- Reactivity Series<br>
+- REDOX in Electrolytic Cell<br>
+- REDOX in Chemical Cell and Voltaic Cell<br> 
+- Exothermic and Endothermic Reactions<br> 
+- Heat of Precipitation<br> 
+- Heat of Displacement <br>
+- Heat of Neutralization <br>
+- Heat of Combustion <br>
+- Saponification <br>
+    <br><br>
+<b>Form 4 Physics :</b><br><br>
+- Pendulum<br>
+- Inclined Plane and Velocity<br> 
+- Inertia Vs Mass<br>
+- Elastic/Inelastic Collisions<br>
+- Explosive Collisions<br>
+- Force, Mass and Acceleration (F=ma)<br>
+- Gravitational Acceleration<br>
+- Conservation of Energy<br>
+- Hooke's Law<br>
+- Pressure in Liquid<br> 
+- Pressure of Liquid Vs Depth<br> 
+- Pressure of Liquid Vs Density<br>
+- Archimede's Principle<br>
+- Pascal's Principle<br>
+- Bernoulli's Principle 1<br>
+- Bernoulli's Principle 2<br>
+- Bernoulli's Principle 3<br>
+- Specific Heat Capacity of Water<br>
+- Specific Heat Capacity (Rise if Temperature)<br>
+- Specific Heat Capacity of Metals<br>
+- Specific Latent Heat<br>
+- Heat of Fusion of Ice <br>
+- Latent Heat of Vaporization of Water<br>  
+- Boyle's Law 1<br>
+- Boyle's Law 2<br>
+- Charles Law <br>
+- Pressure Law<br>
+- Law of Refection/Refraction/Total Internal Reflection<br>
+- Angle of Incidence Vs Angle of Reflection<br>
+- Concave and Convex Mirrors <br>
+- Refraction of Light (Snell's Law)<br>
+- Refractive Index of Water <br>
+    <br><br>
+<b>Form 4 Chemistry :</b><br><br>
+- Diffusion<br>
+- Diffusion & Temperature<br> 
+- Melting/Freezing Point of Naphthalene<br> 
+- Empirical Formula (CuO)<br>
+- Empirical Formula (MgO)<br>
+- Properties of Periodic Table<br>  
+- Reactivity of Group 1 (Alkaline Metal)<br> 
+- Characteristic of Group 17 (Halogens)<br>
+- Properties of Oxides in Period 3<br>
+- Ionic Compound <br>
+- Ionic Vs Covalent Compound 1 <br>
+- Ionic Vs Covalent Compound 2<br>
+- PEKA Experiments for Electrolysis (Chp 6)<br>
+- Electrolysis of molten Lead (II) Bromide<br>
+- Electrolysis <br>
+- Reactivity Series Song<br> 
+- Purification of Metals<br>
+- Electroplating of Metals <br>
+- Voltaic Cells<br>
+- Potential Differences in ECS<br>
+- Displacements of Metals in Electrolysis<br> 
+- Role of water in acids  <br>
+- Acid Base Reactions<br>
+- Neutralization of HCl and NaOH <br>
+- Neutralization of Sulfuric acid with NaOH<br>
+- Making a Standard Solution <br>
+- Preparing a Standard Solution<br>
+- Strong Acid Vs Strong Base <br>
+- Weak Acid Vs Strong Base <br>
+- Strong Acid Vs Weak Base <br>
+- Reactions of Acid (Acid Vs Metals) <br>
+- Reactions of Acid ( Acid Vs Metal Carbonates) <br>
+- Qualitative Analysis of Salts <br>
+- Unknown Gas Tests <br>
+- Production of Sulfuric Acid (Contact Process) <br>
+- Production of Ammonia (Haber Process)<br>
+- How glass is made <br>
+- How ceramic is made <br>
+- Alloy metals <br>
+- How Aluminium is made<br>
+    </div><br><br><br><br></center>
+<center><div class="boxed3">
+  <p style = "font-size:30px; font-weight:900;font-family:Trebuchet MS, sans-serif; color:orange;">Experiments :</p><br><br>
+  <b>Form 3 :</b><br><br>
+- The Respiratory System <br>
+- Diffusion of Oxygen and Carbon Dioxide in the Lung<br> 
+- How Asthma attack occurs ?<br>
+- Smoking & Respiratory System <br>
+- Blood Circulatory System <br>
+- What is Blood ?<br>
+- Hows does White Blood Cell works ?<br>
+- How does platelets in blood works ?<br>
+- What is Heart Attack ?<br>
+- What is Stroke ?<br>
+- What is High blood pressure @ Hypertension<br> 
+- Transportation in Plants<br>
+- Xylem and Phloem in Plants <br>
+- Excretion in Human<br>
+- The Excretory System<br>
+- Kidney and It's Functions<br> 
+- Kidney Diseases <br>
+- Excretion in Plants<br>
+- Human reproductive system<br>
+- The Menstrual Cycle<br>
+- Fertilization and formation of babies<br> 
+- Reproduction in Plants <br>
+- Minerals <br>
+- Reaction of Metal and Non-Metal<br>
+- The Formation of Pertroleum and Natural Gas<br>
+- The Journey of Natural Gas<br>
+- Fractional distillation of Petroleum <br>
+- Crude Oil Fractions & Their Uses<br>
+- Electricity <br>
+- Ohm's Law<br>
+- Parallel Vs Series Circuits<br> 
+- Magnetism <br>
+- Electromagnetism<br> 
+- Generation of Electricity <br>
+- How does Nuclear Power plant works ?<br>
+- Nuclear Energy Good or Bad ?<br>
+- How does Thermal Power plant works ?<br>
+- How does Hydroelectric Power plant works ?<br>
+- Solar Power Plant <br>
+- Wind Power Plant<br>
+- How does Geothermal Power plant works ?<br>
+- Waves Power Plant <br>
+- How does a transformer works ?<br>
+- The Journey of Electricity <br>
+- Origin of Chemical Elements <br>
+- Surface of the Sun as You've never seen it !<br>
+- The Sounds of Sun<br>
+- The Birth of Stars <br>
+- The Death of Stars<br>
+- What are Galaxies ?<br>
+- A Tour to Our Solar System<br>
+- The launch of rockets <br>
+<br><br>
+<b>Form 2:</b><br><br>
+- The 5 Senses<br>
+- How the Skin works ?<br>
+- How the Nose works ?<br>
+- How the Tongue works ?<br>
+- How the Ears work ?<br>
+- How the Eyes work ?<br>
+- Stimuli and response in plants<br>
+- Nutrients <br>
+- The Human Digestive System<br> 
+- Classification of Plants <br>
+- Mono Vs Dicotyledons Plants <br>
+- Ecology and Interdependence <br>
+- Interaction between Living Organism<br> 
+- Ecosystem <br>
+- Food Chain, Food Web and Energy Pyramid<br>
+- Photosynthesis <br>
+- What is water ?<br>
+- Evaporation of Water<br> 
+- Solute, Solvent and Solubility <br>
+- Acid and Alkali<br>
+- Purification of Water in Industries<br> 
+- Water Supply System <br>
+- Air Pressure <br>
+- Atmospheric Pressure <br> 
+- Application of Air Pressure <br> 
+- Dynamic of Forces <br>
+- Friction in Daily Life<br> 
+- Support system in Animals (Exo and Endoskeleton)<br>
+- Support system in Animals (Hydrostatic Skeleton)<br>
+- Support system in Plants <br>
+- Stability <br>
+- Simple machines<br> 
+- Classes of Levers<br>
+<br><br>
+<b>Form 1:</b><br><br>
+- What are Cells ?<br>
+- Cells and Type of Cells<br> 
+- Matters and their states<br>
+- Elements, Compounds and Mixtures<br>
+- Oxygen Vs Carbon Dioxide <br>
+- Properties of Oxygen and Carbon Dioxide<br> 
+- Types of Energy <br>
+- Heat Energy<br>
+- What is Heat ?<br>
+- Heat Flow in Matters <br>
+- States of Matters <br>
+</div></center>
+
+  <br><!-- TOP BUTTON -->
+<center><button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button></center>
+<script>
+/* TOP BUTTON */
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<br><br>
+<footer>
+        <center><b><font color="#FFFDD0" style="font-size:17px ">&copy; Copyright 2020 by BestariSKOR Education</font></b><center>
+        <center><b><font color="#FFFDD0" style="font-size:15px ">&copy;Site powered by Weebly. Managed by Exabytes.my - Malaysia</font></b><center>
+</footer>
+<br><br>
+ </body>
+</html>
